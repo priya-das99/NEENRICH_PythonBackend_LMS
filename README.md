@@ -192,7 +192,8 @@ This table records information about books issued to students. It acts as an ass
 -   The `ISSUES` table links `BOOKS` and `STUDENTS` by storing their respective `id`s as foreign keys, forming a many-to-many relationship.
 
 ## ER Diagram
-https://drive.google.com/file/d/1arz74JphufdhEhPXr-CecHkSHIJ7oga2/view?usp=sharing
+
+![Hosted Image](https://drive.google.com/file/d/1arz74JphufdhEhPXr-CecHkSHIJ7oga2/view?usp=sharing)
 ## Bonus Challenges
 
 ### 1. Overdue Tracking & Reminder System
