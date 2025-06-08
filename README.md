@@ -2,14 +2,6 @@
 
 
 A FastAPI-based backend system for managing a college library.
-##Objective 
-Design and implement a backend system that manages 
-books, students, and book insurance for a small college 
-library. The system should expose a set of RESTful APIs 
-and allow admins to interact with the system 
-programmatically. You’ll also have an opportunity to go 
-beyond the basics and showcase your creativity and grit 
-through a bonus AI assistant feature. 
 
 ## Features
 
@@ -29,50 +21,27 @@ through a bonus AI assistant feature.
 - **Documentation**: FastAPI Swagger UI
 
 ## Project Structure
+
+```
 library_backend/
-├── .git/
-├── src/
-│   ├── db/
-│   │   ├── __pycache__/
-│   │   ├── init_db.py
-│   │   └── session.py
-│   │
-│   ├── routers/
-│   │   ├── __pycache__/
-│   │   ├── books.py
-│   │   ├── students.py
-│   │   ├── issues.py
-│   │   └── issue.py
-│   │
-│   ├── schemas/
-│   │   ├── __pycache__/
-│   │   ├── book.py
-│   │   ├── student.py
-│   │   ├── issue.py
-│   │   └── schemas.py
-│   │
-│   ├── models/
-│   │   ├── __pycache__/
-│   │   ├── __init__.py
-│   │   ├── base.py
-│   │   ├── book.py
-│   │   ├── student.py
-│   │   ├── issue.py
-│   │   └── models.py
-│   │
-│   ├── __pycache__/
-│   ├── config.py
-│   ├── main.py
-│   ├── scheduler.py
-│   └── email_utils.py
-│
+├── .env                    # Environment variables
 ├── .gitignore
-├── requirements.txt
-├── README.md
-├── add_books.py
-├── contextDiagramLMS.drawio.png
-├── Level1DFD.png
-└── ER diagram.drawio.png
+├── requirements.txt        # Dependencies
+├── README.md              # Project documentation
+│
+├── src/                   # Main application
+│   ├── main.py            # FastAPI app entry point
+│   ├── config.py          # App configuration
+│   ├── models/            # Database models
+│   ├── schemas/           # Pydantic models
+│   ├── routers/           # API endpoints
+│   ├── services/          # Business logic
+│   ├── db/                # Database setup
+│   ├── utils/             # Helper functions
+│   └── tests/             # Unit tests
+│
+└── scripts/               # Utility scripts
+```
 
 ## Setup Instructions
 
