@@ -2,6 +2,14 @@
 
 
 A FastAPI-based backend system for managing a college library.
+##Objective 
+Design and implement a backend system that manages 
+books, students, and book insurance for a small college 
+library. The system should expose a set of RESTful APIs 
+and allow admins to interact with the system 
+programmatically. You’ll also have an opportunity to go 
+beyond the basics and showcase your creativity and grit 
+through a bonus AI assistant feature. 
 
 ## Features
 
