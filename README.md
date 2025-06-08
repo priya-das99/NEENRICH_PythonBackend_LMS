@@ -24,23 +24,49 @@ A FastAPI-based backend system for managing a college library.
 
 ```
 library_backend/
-├── .env                    # Environment variables
-├── .gitignore
-├── requirements.txt        # Dependencies
+├── .git/                      # Git repository
+├── src/                       # Main application code
+│   ├── db/                    # Database related code
+│   │   ├── __pycache__/
+│   │   ├── init_db.py        # Database initialization
+│   │   └── session.py        # Database session management
+│   │
+│   ├── routers/              # API endpoints
+│   │   ├── __pycache__/
+│   │   ├── books.py          # Book management endpoints
+│   │   ├── students.py       # Student management endpoints
+│   │   ├── issues.py         # Issue management endpoints
+│   │   └── issue.py          # Additional issue functionality
+│   │
+│   ├── schemas/              # Pydantic models for validation
+│   │   ├── __pycache__/
+│   │   ├── book.py           # Book data validation
+│   │   ├── student.py        # Student data validation
+│   │   ├── issue.py          # Issue data validation
+│   │   └── schemas.py        # Common schemas
+│   │
+│   ├── models/               # SQLAlchemy database models
+│   │   ├── __pycache__/
+│   │   ├── __init__.py
+│   │   ├── base.py          # Base model class
+│   │   ├── book.py          # Book model
+│   │   ├── student.py       # Student model
+│   │   ├── issue.py         # Issue model
+│   │   └── models.py        # Model relationships
+│   │
+│   ├── __pycache__/
+│   ├── config.py            # Application configuration
+│   ├── main.py             # Application entry point
+│   ├── scheduler.py        # Background task scheduling
+│   └── email_utils.py      # Email functionality
+│
+├── .gitignore              # Git ignore file
+├── requirements.txt        # Project dependencies
 ├── README.md              # Project documentation
-│
-├── src/                   # Main application
-│   ├── main.py            # FastAPI app entry point
-│   ├── config.py          # App configuration
-│   ├── models/            # Database models
-│   ├── schemas/           # Pydantic models
-│   ├── routers/           # API endpoints
-│   ├── services/          # Business logic
-│   ├── db/                # Database setup
-│   ├── utils/             # Helper functions
-│   └── tests/             # Unit tests
-│
-└── scripts/               # Utility scripts
+├── add_books.py           # Utility script for adding books
+├── contextDiagramLMS.drawio.png  # System context diagram
+├── Level1DFD.png          # Level 1 Data Flow Diagram
+└── ER diagram.drawio.png   # Entity Relationship diagram
 ```
 
 ## Setup Instructions
