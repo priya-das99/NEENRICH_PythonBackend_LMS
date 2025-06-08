@@ -1,5 +1,5 @@
 # NETNRICH_PythonBackend_LMS
-# Library Management System Backend
+
 
 A FastAPI-based backend system for managing a college library.
 
@@ -395,4 +395,71 @@ The system implements an automated overdue book tracking and reminder system usi
    - Queue-based processing
    - Rate limiting
    - Fallback mechanisms
+
+### 3. Conversational AI Agent
+
+#### Design Overview
+A conversational assistant for library administrators that processes natural language queries and provides streaming responses.
+
+#### Components
+1. **Webhook API Endpoint**
+   ```python
+   @router.post("/chat")
+   async def chat_endpoint(
+       message: ChatMessage,
+       conversation_id: str = None
+   ):
+       # Process natural language query
+       # Return streaming response
+   ```
+
+2. **Intent Recognition System**
+   - Predefined intents for common queries:
+     - Overdue books count
+     - Department borrowing statistics
+     - New books added
+     - Book availability
+     - Student borrowing history
+
+3. **Query Processing Pipeline**
+   - Natural Language Understanding (NLU)
+   - Intent classification
+   - Entity extraction
+   - SQL query generation
+   - Response formatting
+
+4. **Context Management**
+   - Maintains conversation history
+   - Tracks user session
+   - Handles follow-up questions
+
+5. **Response Streaming**
+   - Real-time response generation
+   - Progressive data delivery
+   - Typing indicators
+
+#### Example Queries Handled
+- "How many books are overdue?"
+- "Which department borrowed the most books last month?"
+- "How many new books were added this week?"
+- "Show me books by author X"
+- "What books are currently available?"
+
+#### Implementation Options
+1. **OpenAI GPT Integration**
+   - Use GPT API for natural language understanding
+   - Custom prompt engineering for library context
+   - Response streaming using OpenAI's streaming API
+
+2. **Intent-to-Query Mapping**
+   - Rule-based intent classification
+   - Predefined SQL query templates
+   - Custom response formatting
+
+3. **Hybrid Approach**
+   - GPT for complex queries
+   - Rule-based system for common queries
+   - Fallback mechanisms
+
+
 
