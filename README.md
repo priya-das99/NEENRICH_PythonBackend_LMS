@@ -193,7 +193,7 @@ This table records information about books issued to students. It acts as an ass
 
 ## ER Diagram
 
-![Hosted Image](https://drive.google.com/file/d/1arz74JphufdhEhPXr-CecHkSHIJ7oga2/view?usp=sharing)
+https://drive.google.com/file/d/1arz74JphufdhEhPXr-CecHkSHIJ7oga2/view?usp=sharing
 ## Bonus Challenges
 
 ### 1. Overdue Tracking & Reminder System
