@@ -1,4 +1,4 @@
-# NETNRICH_PythonBackend_LMS
+# NETENRICH_PythonBackend_LMS
 
 
 A FastAPI-based backend system for managing a college library.
